@@ -1,77 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <main>
-            <div class="main-container">
-                <div class="back">
-                    <img src="assets/icons/arrow-left-02.svg" alt="icone de voltar">
-                    <span>Voltar</span>
+      <main>
+        <div class="main-container">
+          <div class="back">
+            <img src="assets/icons/arrow-left-02.svg" alt="icone de voltar" />
+            <span>Voltar</span>
+          </div>
+
+          <h1>Formulário de matrícula</h1>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+
+          <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Informações da criança</legend>
+
+              <div class="input-warpper">
+                <label for="fullname">Nome completo</label>
+                <input
+                  id="fullname"
+                  type="text"
+                  placeholder="Qual o nome da criança"
+                />
+              </div>
+
+              <div class="input-warpper">
+                <label for="birthdate">Data de nascimento</label>
+                <input id="birthdate" type="date" lang="pt-br" />
+              </div>
+
+              <div class="select-warpper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="">Selecione</option>
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+                  <option value="na">Prefiro não informar</option>
+                </select>
+              </div>
+
+              <div class="textarea-warpper">
+                <label for="medical-info"> informações médicas</label>
+                <textarea
+                  id="medical-info"
+                  name="medical-info"
+                  placeholder="Informe aqui quaisquer informações médicas relevantes sobre a criança"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="droparea-warpper">
+                <label for="birth-file">Certidão de nascimento</label>
+
+                <div class="dropzone">
+                  <input type="file" id="birth-file" name="birth-file" />
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.9552 18.0221C34.97 18.022 34.985 18.022 35 18.022C39.9706 18.022 44 22.0588 44 27.0386C44 31.6796 40.5 35.5016 36 36M34.9552 18.0221C34.9848 17.6921 35 17.3579 35 17.0202C35 10.9339 30.0752 6 24 6C18.2465 6 13.5247 10.4253 13.0408 16.0638M34.9552 18.0221C34.7506 20.2952 33.8572 22.3692 32.4856 24.033M20.001 18.022C18.3295 16.7639 16.2516 16.0183 14 16.0183C13.6765 16.0183 13.3565 16.0337 13.0408 16.0638C7.96796 16.5475 4 20.8278 4 26.0366C4 30.8834 7.43552 34.9264 12 35.8546"
+                      stroke="#D6D3D1"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31"
+                      stroke="#D6D3D1"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <p>clique aqui para fazer upload do documento</p>
                 </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
 
-                <h1>Formulário de matrícula</h1>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-            
-                <form action="" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend> Informações da criança</legend>
-
-                        <div class="input-warpper">
-                            <label for="fullname">Nome completo</label>
-                            <input id="fullname" type="text" placeholder="Qual o nome da criança">
-                        </div>
-
-                        <div class="input-warpper">
-                            <label for="birthdate">Data de nascimento</label>
-                            <input id="birthdate" type="date" lang="pt-br">
-                        </div>
-
-                        <div class="select-warpper">
-                            <label for="gender">Sexo</label>
-                            <select name="gender" id="gender">
-                                <option value="">Selecione</option>
-                                <option value="male">Masculino</option>
-                                <option value="female">Feminino</option>
-                                <option value="na">Prefiro não informar</option>
-                            </select>
-                        </div>
-
-                        <div class="textarea-warpper">
-                            <label for="medical-info"> informações médicas</label>
-                            <textarea id="medical-info" name="medical-info"placeholder="Informe aqui quaisquer informações médicas relevantes sobre a criança" cols="30" rows="10"></textarea>
-                        </div>
-
-                        <div class="droparea-warpper">
-                            <input type="file" id="birth-file" name="birth-file">
-                            <img src="assets/icons/cloud-upload.svg" alt="icone de upload">
-                            <p> clique aqui para fazer upload do documento</p>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-
-        <aside>
-            <div class="aside-container">
-              <header>
-                <img src="/assets/logo.svg" alt="logo estrelas do amanhã">
-                <h2>Porque cada momento de  <span>aprendizado</span>  conta</h2>
-                <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
-              </header>
-              <img src="/assets/Illustration.svg" alt="Ilustraçao de uma professora com 4 crianças">
-            </div>
-        </aside>
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="/assets/logo.svg" alt="logo estrelas do amanhã" />
+            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <p>
+              Inscreva seu filho em nossa escola e veja-o florescer em um
+              ambiente acolhedor, seguro e estimulante.
+            </p>
+          </header>
+          <img
+            src="/assets/Illustration.svg"
+            alt="Ilustraçao de uma professora com 4 crianças"
+          />
+        </div>
+      </aside>
     </div>
-</body>
+  </body>
 </html>
