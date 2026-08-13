@@ -64,7 +64,7 @@
                   name="medical-info"
                   placeholder="Informe aqui quaisquer informações médicas relevantes sobre a criança"
                   cols="30"
-                  rows="10"
+                  rows="5"
                 ></textarea>
               </div>
 
@@ -97,6 +97,48 @@
                   </svg>
 
                   <p>clique aqui para fazer upload do documento</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="address">
+              <legend>Endereço residencial</legend>
+
+              <div class="input-wrapper">
+                <label for="CEP"> CEP </label>
+                <input type="text" placeholder="Digite o CEP" />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street"> Rua </label>
+                  <input
+                    type="text"
+                    placeholder="Digite o nome da rua"
+                    disabled
+                    value="Rua das Flores"
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="Number"> Número </label>
+                  <input
+                    type="number"
+                    placeholder="Digite o número"
+                    value="123"
+                  />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade </label>
+                  <input type="text" disabled value="Minas Gerais" />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="State"> Estado </label>
+                  <input type="text" value="MG" disabled />
                 </div>
               </div>
             </fieldset>
