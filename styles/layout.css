@@ -13,7 +13,7 @@ main {
     
     .main-container {
         max-width: 33rem;
-        margin-left: auto;
+           margin: auto;
     }
 
     .back {
@@ -33,10 +33,12 @@ aside {
     background-color: var(--surface-secondary);
     height: 100vh;
     padding: 4rem;
-
+   
     .aside-container {
         max-width: 31rem;
         
+        margin: auto;
+        margin-top: 15rem;
         & > img {
            margin-top: 2rem;
         }
